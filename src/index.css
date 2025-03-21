@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Color Variables */
+:root {
+  --primary-color: #0e1e2d;
+  --secondary-color: #c3a65a;
+  --text-color: #565656;
+  --white: #ffffff;
+  --light-bg: #f8f8f8;
+  --dark-overlay: rgba(14, 30, 45, 0.9);
+  --transition: all 0.3s ease-in-out;
+  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
