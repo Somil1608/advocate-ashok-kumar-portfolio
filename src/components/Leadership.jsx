@@ -54,7 +54,7 @@ const Leadership = () => {
       {/* Haryana Adhivakta Parishad Info */}
       <div className="relative z-10 max-w-5xl mx-auto mt-16 text-center text-lg text-gray-200 px-6 animate-fadeIn">
       <a 
-  href="https://www.facebook.com/p/Adhivakta-Parishad-Haryana-100063798502693/" 
+  href="https://adhivaktaparishad.com/" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="inline-block transition-transform duration-300 transform hover:scale-105 relative group text-secondary text-2xl mb-6 font-bold"
