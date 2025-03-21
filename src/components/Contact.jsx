@@ -7,7 +7,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_bd4etpw', 'template_ztgj75r', form.current, 'dfkiiSS4xGHBLHcaY')
       .then(() => {
         alert('Thank you! Your message has been sent.');
       }, () => {
