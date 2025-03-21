@@ -4,8 +4,7 @@ Absolutely! Here's a well-structured, professional, and polished `README.md` tai
 
 # Advocate Ashok Kumar Sirsi - Portfolio Website
 
-![Portfolio Screenshot](./Screenshot 2025-03-21 at 5.29.30 PM.png) <!-- Replace with actual screenshot path -->
-<!-- /var/folders/md/5xnp174x25b7c8rdc26xbv4h0000gn/T/TemporaryItems/NSIRD_screencaptureui_cHDoM3/Screenshot 2025-03-21 at 5.29.30 PM.png -->
+![Portfolio Screenshot](./public/webpage.png) <!-- Replace with actual screenshot path -->
 ## Overview
 
 This is a premium, professional portfolio website built for **Advocate Ashok Kumar Sirsi**, who is a leading legal professional and General Secretary of the Haryana Adhivakta Parishad. The website elegantly presents his expertise, leadership contributions, notable cases, achievements, and facilitates client inquiries seamlessly.
