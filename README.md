@@ -1,7 +1,3 @@
-Absolutely! Here's a well-structured, professional, and polished `README.md` tailored specifically for your **Advocate Ashok Kumar Sirsi Portfolio Website** project. It’s designed to showcase your design, tech stack, and deployment clearly:
-
----
-
 # Advocate Ashok Kumar Sirsi - Portfolio Website
 
 ![Portfolio Screenshot](./public/webpage.png) <!-- Replace with actual screenshot path -->
@@ -85,5 +81,3 @@ This project is licensed for personal and educational use.
 - Advanced case study details
 
 ---
-
-**Would you like me to prepare this complete README file and commit it into your project automatically?**
