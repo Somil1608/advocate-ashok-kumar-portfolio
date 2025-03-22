@@ -4,9 +4,18 @@ import { FaAward, FaTrophy } from 'react-icons/fa';
 
 const Achievements = () => {
   const awards = [
-    { icon: <FaAward className="text-gold-accents text-5xl mb-6" />, title: "Best Advocate Award", subtitle: "District Bar Association, Karnal (2015)" },
-    { icon: <FaTrophy className="text-gold-accents text-5xl mb-6" />, title: "Top 10 Criminal Lawyers", subtitle: "Haryana Legal Awards (2020)" },
+    { 
+      icon: <FaAward className="text-gold-accents text-5xl mb-6" />, 
+      title: "Bar Council of Punjab & Haryana", 
+      subtitle: "Recognized Legal Practitioner, Registered Since 2009" 
+    },
+    { 
+      icon: <FaTrophy className="text-gold-accents text-5xl mb-6" />, 
+      title: "General Secretary - Haryana Adhivakta Parishad", 
+      subtitle: "Driving Legal Reforms & Advocate Welfare Initiatives" 
+    },
   ];
+  
 
   return (
     <section className="py-24 bg-[var(--primary-color)] text-white">
@@ -38,13 +47,13 @@ const Achievements = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3 className="text-5xl font-heading text-gold-accents mb-2 border-b-2 border-gold-accents pb-2">
-              <CountUp end={15} duration={3} />+
+              <CountUp end={15} duration={4} />+
             </h3>
             <p className="text-gray-300 uppercase text-sm tracking-widest">Years Experience</p>
           </div>
           <div className="flex flex-col items-center">
             <h3 className="text-5xl font-heading text-gold-accents mb-2 border-b-2 border-gold-accents pb-2">
-              <CountUp end={100} duration={3} />%
+              <CountUp end={99} duration={5} />%
             </h3>
             <p className="text-gray-300 uppercase text-sm tracking-widest">Client Satisfaction</p>
           </div>
