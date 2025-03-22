@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { FaLinkedin, FaFacebookF, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaFacebookF, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef();
@@ -32,11 +32,11 @@ const Contact = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <FaPhoneAlt className="text-secondary" />
-              <span>+91 98765 43210</span>
+              <span>+91 94168 29490</span>
             </div>
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-secondary" />
-              <span>ashok.kumar@example.com</span>
+              <span>advocateashokkumarsirsi@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
               <FaMapMarkerAlt className="text-secondary" />
@@ -48,6 +48,7 @@ const Contact = () => {
             <a href="#" className="hover:text-secondary transition text-lg"><FaLinkedin /></a>
             <a href="https://www.facebook.com/profile.php?id=61557533192790" className="hover:text-secondary transition text-lg"><FaFacebookF /></a>
             <a href="https://www.instagram.com/sirsiashokkumar?igsh=cDN1cGYyZTR1a2ty" className="hover:text-secondary transition text-lg"><FaInstagram /></a>
+            <a href="https://wa.me/919416829490?text=Hello%2C%20I%20am%20interested%20in%20your%20services" className="hover:text-secondary transition text-lg"><FaWhatsapp /></a>
           </div>
         </div>
 

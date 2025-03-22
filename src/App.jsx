@@ -10,6 +10,8 @@ import Testimonials from './components/Testimonials.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import Leadership from './components/Leadership.jsx';
+import CursorParticles from './components/CursorParticles';
+
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -17,6 +19,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return (
     <div className="font-sans bg-[var(--primary-color)] text-white">
+           
+     <CursorParticles />
 
       <Header />
       <Hero />

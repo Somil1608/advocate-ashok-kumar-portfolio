@@ -1,72 +1,100 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import aboutImg from '../assets/as1.png'; 
+import aboutmp4 from '../mp4law.mp4'; 
 
 const Hero = () => {
-  const [showIndicator, setShowIndicator] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowIndicator(false);  // Hide on scroll
-      } else {
-        setShowIndicator(true);   // Show at top
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <section className="flex flex-col md:flex-row items-center h-screen text-white bg-gradient-to-r from-[#0A1A3A] to-[#1c1c1c] relative pt-32"> 
-      
-      <div className="md:w-1/2 px-10 space-y-6 text-center md:text-left">
-        
-        <p className="uppercase tracking-widest text-gold-accents">Est. 2009</p>
-        <h1 className="font-heading text-h1 leading-tight">Your Victory, Our Strategy</h1>
-        <p className="text-court-gray">Civil, Criminal & Family Law Solutions.</p>
-        <div className="mt-6">
-        <a href="#contact" class="
-                text-base 
-                px-[3.3em] py-[1em] 
-                cursor-pointer 
-                transform perspective-[200px] rotate-x-[15deg] 
-                text-primary 
-                font-black 
-                border-none 
-                rounded-[5px] 
-                bg-gold-accents 
-                shadow-[0_40px_29px_0_rgba(63,94,25,0.2)] 
-                will-change-transform 
-                transition-all duration-300 
-                border-b-2 border-gold-accents
-                hover:perspective-[180px] hover:rotate-x-[30deg] hover:translate-y-[2px] hover:bg-white
-                active:perspective-[170px] active:rotate-x-[36deg] active:translate-y-[5px]
-                ">Free Consultation
-        </a>
-        </div>
+    <section className="relative flex flex-col md:flex-row items-center h-screen text-white overflow-hidden">
+
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src={aboutmp4} type="video/mp4" />
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 w-full h-full bg-black opacity-50 z-0"></div>
+
+      {/* Content */}
+      <div className="relative z-10 md:w-1/2 px-10 space-y-6 text-center md:text-left">
+        <motion.p
+          className="uppercase tracking-widest text-gold-accents"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Est. 2009
+        </motion.p>
+        <motion.h1
+          className="font-heading text-5xl md:text-6xl leading-tight"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Your Victory, Our Strategy
+        </motion.h1>
+        <motion.p
+          className="text-court-gray"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          Civil, Criminal & Family Law Solutions.
+        </motion.p>
+        <motion.div
+          className="mt-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+        >
+          <a
+            href="#contact"
+            className="inline-block text-base px-8 py-3 cursor-pointer text-primary font-black rounded-md bg-gold-accents shadow-lg transition-transform transform hover:scale-105"
+          >
+            Free Consultation
+          </a>
+        </motion.div>
       </div>
-     
 
-
-      <div className="md:w-1/2 relative mt-10">
-        <img 
-          src={aboutImg} 
-          alt="Advocate" 
-          className="w-full h-[85%] object-cover mix-blend-overlay rounded-xl shadow-md" 
+      {/* Image */}
+      <motion.div
+        className="relative z-10 mt-10 md:w-1/2 flex justify-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 2 }}
+      >
+        <img
+          src={aboutImg}
+          alt="Advocate"
+          className="w-[80%] h-auto rounded-xl shadow-lg"
         />
-      </div>
-      
+      </motion.div>
 
       {/* Scroll Indicator */}
-      <div className={`absolute bottom-5 left-1/2 transform -translate-x-1/2 z-10 transition-opacity duration-500 ${showIndicator ? 'opacity-100' : 'opacity-0'}`}>
+      <motion.div
+        className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 2.5 }}
+      >
         <a href="#about">
-          <svg className="w-8 h-8 text-gold-accents animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <svg
+            className="w-8 h-8 text-gold-accents animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </a>
-      </div>
+      </motion.div>
 
-      
     </section>
   );
 };

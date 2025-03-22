@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import aboutImg from '../assets/as.jpeg';
 
 const About = () => {
@@ -43,7 +43,7 @@ const About = () => {
               <FaFacebookF size={24} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
-              <FaTwitter size={24} />
+              <FaWhatsapp size={24} />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
               <FaInstagram size={24} />

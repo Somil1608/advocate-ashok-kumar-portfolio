@@ -8,12 +8,15 @@ const Footer = () => {
         <p className="text-sm">&copy; 2025 Advocate Ashok Kumar. All rights reserved.</p>
 
         <div className="flex justify-center flex-wrap gap-4 text-sm font-light tracking-wide">
-          <a href="#" className="hover:text-secondary transition">Privacy Policy</a>
-          <span className="text-gray-400">|</span>
-          <a href="#" className="hover:text-secondary transition">Terms & Conditions</a>
-          <span className="text-gray-400">|</span>
-          <span className="text-gray-300">Bar Membership #123456</span>
-        </div>
+        <a href="#" className="hover:text-secondary transition">Privacy Policy</a>
+        <span className="text-gray-400">|</span>
+        <a href="#" className="hover:text-secondary transition">Terms & Conditions</a>
+        <span className="text-gray-400">|</span>
+        <a 
+          href="https://bcph.co.in/" 
+          target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition"> Bar Council of Punjab & Haryana</a>
+      </div>
+
 
         <div className="flex justify-center gap-4 text-xs text-gray-400">
           <span>SSL Secured</span>
@@ -39,7 +42,7 @@ const Footer = () => {
 
         {/* Developer Credit */}
         <div className="text-center text-xs text-gray-500 mt-6">
-          Designed & Developed by <a href="https://portfolio-git-main-somil1608s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+          Designed & Developed by <a href="https://somil-3d-portfolio.vercel.app//" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
             Somil</a>
         </div>
       </div>

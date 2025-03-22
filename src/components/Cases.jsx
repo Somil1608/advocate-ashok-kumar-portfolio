@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaMedal, FaBalanceScaleLeft, FaHandshake } from 'react-icons/fa';
+import { FaMedal, FaBalanceScaleLeft, FaHandshake, FaArrowCircleLeft, FaMoneyCheck } from 'react-icons/fa';
 
 const Cases = () => {
   const lineRef = useRef(null);
@@ -22,8 +22,15 @@ const Cases = () => {
       title: "Family Law Settlement",
       desc: "Negotiated a fair settlement in a complex family law case involving custody and property division.",
       icon: <FaHandshake className="text-secondary text-3xl mb-2" />,
-      year: "2019"
+      year: "2020"
     },
+    {
+      title: "Banking Panel Representation",
+      desc: "Successfully represented leading banks in recovery and compliance cases as part of official legal panels.",
+      icon: <FaMoneyCheck className="text-secondary text-3xl mb-2" />, // Banking related icon
+      year: "2024"
+    },
+    
     
   ];
 
