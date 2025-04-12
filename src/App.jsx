@@ -20,8 +20,6 @@ function App() {
   return (
     <div className="font-sans bg-[var(--primary-color)] text-white">
            
-     <CursorParticles />
-
       <Header />
       <Hero />
       

@@ -39,13 +39,13 @@ const About = () => {
 
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-8">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
+            <a href="https://www.facebook.com/profile.php?id=61557533192790" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
               <FaFacebookF size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
+            <a href="https://wa.me/919416829490?text=Hello%2C%20I%20am%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
               <FaWhatsapp size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
+            <a href="https://www.instagram.com/sirsiashokkumar?igsh=cDN1cGYyZTR1a2ty" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition">
               <FaInstagram size={24} />
             </a>
           </div>
